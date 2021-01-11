@@ -6,6 +6,7 @@ header {
     list-style: none;
     li {
       display: inline-block;
+      cursor: pointer;
     }
     i {
       margin-right: 5px;
@@ -37,12 +38,18 @@ header {
   #bottom_header {
     @include HeaderTopBottom;
     justify-content: center;
-    width: 60%;
+    width: 70%;
     #logo {
       height: 100%;
       width: 150px;
-      background-image: url('../../images/logo_painter.png');
+      background-image: url(../img/logo_painter.png);
       background-size: contain;
+      background-repeat: no-repeat;
+      // img {
+      //   text-align: center;
+      //   height: 100%;
+      //   padding: 10px 5px;
+      // }
     }
     ul {
       height: 100%;

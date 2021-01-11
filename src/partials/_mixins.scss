@@ -1,0 +1,11 @@
+@mixin HeaderTopBottom {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  margin: 0 auto;
+}
+@mixin clearFix {
+  content: "";
+  display: table;
+  clear: both;
+}

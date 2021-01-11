@@ -14,6 +14,7 @@ header ul {
 }
 header ul li {
   display: inline-block;
+  cursor: pointer;
 }
 header ul i {
   margin-right: 5px;
@@ -47,13 +48,14 @@ header #bottom_header {
   height: 50%;
   margin: 0 auto;
   justify-content: center;
-  width: 60%;
+  width: 70%;
 }
 header #bottom_header #logo {
   height: 100%;
   width: 150px;
-  background-image: url(/images/logo_painter.png?d04ea0f7a2e2c965c6b36b3188a1490e);
+  background-image: url(../img/logo_painter.png);
   background-size: contain;
+  background-repeat: no-repeat;
 }
 header #bottom_header ul {
   height: 100%;
@@ -78,4 +80,44 @@ header #bottom_header ul li:hover a {
 }
 header #bottom_header ul li a {
   color: #ffffff;
+}
+
+footer {
+  height: 400px;
+  width: 100%;
+}
+footer #footer_top {
+  content: "";
+  display: table;
+  clear: both;
+  height: 80%;
+  width: 70%;
+  padding-top: 40px;
+  margin: 0 auto;
+  background-color: #ECECEC;
+}
+footer #footer_top .column {
+  float: left;
+  text-align: center;
+  width: 25%;
+  height: 100%;
+  padding: 40px 10px 0;
+}
+footer #footer_top .column ul {
+  list-style: none;
+}
+footer #footer_top .column ul li {
+  margin-top: 10px;
+}
+footer #footer_top .column ul li:first-child {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+footer #footer_top .column ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #989898;
+}
+footer #footer_top .column ul li a:hover {
+  text-decoration: underline;
 }
