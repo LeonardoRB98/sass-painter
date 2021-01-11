@@ -14,24 +14,68 @@ header ul {
 }
 header ul li {
   display: inline-block;
-  margin-right: 10px;
 }
 header ul i {
   margin-right: 5px;
-  color: #009CFF;
 }
 header ul a {
   text-decoration: none;
-  color: #989898;
-}
-header ul a:hover {
-  color: #ffffff;
 }
 header #top_header {
   display: flex;
   align-items: center;
-  flex-direction: row-reverse;
-  width: 60%;
   height: 50%;
   margin: 0 auto;
+  width: 60%;
+  flex-direction: row-reverse;
+}
+header #top_header ul li {
+  margin-right: 10px;
+}
+header #top_header ul i {
+  color: #009CFF;
+}
+header #top_header ul a {
+  color: #989898;
+}
+header #top_header ul a:hover {
+  color: #ffffff;
+}
+header #bottom_header {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  width: 60%;
+}
+header #bottom_header #logo {
+  height: 100%;
+  width: 150px;
+  background-image: url(/images/logo_painter.png?d04ea0f7a2e2c965c6b36b3188a1490e);
+  background-size: contain;
+}
+header #bottom_header ul {
+  height: 100%;
+}
+header #bottom_header ul li {
+  text-align: center;
+  height: 100%;
+  width: 130px;
+  line-height: 50px;
+}
+header #bottom_header ul li i {
+  color: #ffffff;
+}
+header #bottom_header ul li:hover {
+  background-color: #E6E6E6;
+}
+header #bottom_header ul li:hover i {
+  color: #101010;
+}
+header #bottom_header ul li:hover a {
+  color: #101010;
+}
+header #bottom_header ul li a {
+  color: #ffffff;
 }

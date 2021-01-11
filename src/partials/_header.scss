@@ -6,26 +6,67 @@ header {
     list-style: none;
     li {
       display: inline-block;
-      margin-right: 10px;
     }
     i {
       margin-right: 5px;
-      color: $iconColor;
     }
     a {
       text-decoration: none;
-      color: $linkColor;
-      &:hover {
-        color: $linkColorHover;
-      }
+
     }
   }
   #top_header {
-    @include DisplayflexList;
-    flex-direction: row-reverse;
-    // background-color: coral;
+    @include HeaderTopBottom;
     width: 60%;
-    height: 50%;
-    margin: 0 auto;
+    flex-direction: row-reverse;
+    ul {
+      li {
+        margin-right: 10px;
+      }
+      i {
+        color: $btnLinkColor;
+      }
+      a {
+        color: $linkColor;
+        &:hover {
+          color: $linkColorHover;
+        }
+      }
+    }
+  }
+  #bottom_header {
+    @include HeaderTopBottom;
+    justify-content: center;
+    width: 60%;
+    #logo {
+      height: 100%;
+      width: 150px;
+      background-image: url('../../images/logo_painter.png');
+      background-size: contain;
+    }
+    ul {
+      height: 100%;
+      li {
+        text-align: center;
+        height: 100%;
+        width: 130px;
+        line-height: 50px;
+         i {
+           color: #ffffff;
+         }
+        &:hover {
+          background-color: #E6E6E6;
+          i {
+            color: $mainColor;
+          }
+          a {
+            color: $mainColor;
+          }
+        }
+        a {
+          color: #ffffff;
+        }
+      }
+    }
   }
 }
