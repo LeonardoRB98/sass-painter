@@ -14,23 +14,12 @@ footer {
       width: 25%;
       height: 100%;
       padding: 20px 10px 0;
-      ul {
-        list-style: none;
-        li {
-          margin-top: 10px;
-          &:first-child {
-            font-size: 20px;
-            margin-bottom: 20px;
-          }
-          a {
-            text-decoration: none;
-            font-size: 14px;
-            color: $linkColor;
-            &:hover {
-              text-decoration: underline;
-
-            }
-          }
+      @include ulLink;
+      li {
+        margin-top: 10px;
+        &:first-child {
+          font-size: 20px;
+          margin-bottom: 20px;
         }
       }
       #social {
@@ -55,16 +44,21 @@ footer {
     background-color: $mainColor;
     #footer_left {
       @include FooterLeftRight;
+      justify-content: center;
+      img {
+        margin-right: 20px;
+      }
     }
     #footer_right {
       @include FooterLeftRight;
       @include ulLink;
       li {
         display: inline-block;
-        margin-right: 8px;
+        margin-right: 15px;
+        &:last-child {
+          color: #ffffff;
+        }
       }
-      background-color: purple;
-
     }
   }
 }
