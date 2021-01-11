@@ -1,20 +1,19 @@
 footer {
-  height: 400px;
+  height: 500px;
   width: 100%;
 
   #footer_top {
     @include clearFix;
-    height: 80%;
     width: 70%;
     padding-top: 40px;
     margin: 0 auto;
+    height: 80%;
     background-color: #ECECEC;
     .column {
       float: left;
-      text-align: center;
       width: 25%;
       height: 100%;
-      padding: 40px 10px 0;
+      padding: 20px 10px 0;
       ul {
         list-style: none;
         li {
@@ -34,6 +33,38 @@ footer {
           }
         }
       }
+      #social {
+        ul {
+          margin-top: 10px;
+          list-style: none;
+        }
+        li {
+          display: inline-block;
+          i {
+            font-size: 30px;
+          }
+        }
+
+      }
+    }
+  }
+  #footer_bottom {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    background-color: $mainColor;
+    #footer_left {
+      @include FooterLeftRight;
+    }
+    #footer_right {
+      @include FooterLeftRight;
+      @include ulLink;
+      li {
+        display: inline-block;
+        margin-right: 8px;
+      }
+      background-color: purple;
+
     }
   }
 }
