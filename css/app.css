@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+header ul {
+  list-style: none;
+}
+header ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+header ul i {
+  margin-right: 5px;
+  color: #009CFF;
+}
+header ul a {
+  text-decoration: none;
+  color: #989898;
+}
+header ul a:hover {
+  color: #ffffff;
+}
+header #top_header {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 60%;
+  height: 50%;
+  margin: 0 auto;
+}
